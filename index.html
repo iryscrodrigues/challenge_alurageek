@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+        <title>Alura Geek</title>
+
+</head>
+
+<body>
+    <header><img src="./src/logo/alura.png"></header>
+     <div id="overlay">
+        <div id="popup">
+            <img src="./src/images/Hello_Kitty.jpg" alt="Imagem de Exemplo">
+            <button id="closeBtn">Fechar</button>
+        </div>
+    </div>
+<main>
+     <div class="container" id="products">
+        <section class="my-products" id="allProducts">
+            <h1>MEUS PRODUTOS:</h1>
+            <div class="products" id="cards">
+
+            </div>
+        </section>
+
+        <section id="products-container" class="products-container" class="add-produtcs">
+            <h1>ADICIONAR</h1>
+            <h1>PRODUTOS:</h1>
+            <form id="form-product">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="Nome" required>
+
+                    <input type="number" id="price" name="price" placeholder="Valor" required>
+
+                    <input type="" id="image" name="image" placeholder="Link da imagem" required>
+                </div>
+                <div class="button-group">
+                    <button class="save" type="submit">Guardar</button>
+                    <button class="clean" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+   <img src="./src/logo/alura.png">
+        <p>Desenvolvido por  <a href="https://github.com/iryscrodrigues" target="_blank">Irys Rodrigues</a></p>
+        <p>ALURA LATAM 2024</p>
+</footer>
+<script src="./src/js/main.js"></script>
+</body>
+</html>
