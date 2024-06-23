@@ -133,7 +133,6 @@ p {
 
 .card p {
     margin: 10px 10px;
-
 font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -163,8 +162,10 @@ font-family: "IBM Plex Sans", sans-serif;
 }
 
 .products {
-    display: grid;
-    width: 678px;
+    display: flex;
+     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 678px;
     height: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px 0px;
@@ -172,6 +173,7 @@ font-family: "IBM Plex Sans", sans-serif;
     overflow: auto;
     gap: 2.5rem;
     padding-top: 4.0rem;
+   
 }
 
 .products img {
@@ -227,9 +229,9 @@ font-family: "IBM Plex Sans", sans-serif;
 input {
     color: var(--main-color);
     border-radius: 40px;
-    width: 400px;
+    max-width: 400px;
     height: 70px;
-        border: 2px solid #E860A2;
+     border: 2px solid #E860A2;
     margin-bottom: 25px;
     padding-left: 10px;
 }
@@ -360,9 +362,8 @@ cursor: pointer;
 
     .products {
         grid-template-columns: repeat(3, 1fr);
-        gap: 6px;
+    gap: 1.6rem;
         text-align: center;
-        width: auto;
 
     }
 
@@ -385,6 +386,13 @@ cursor: pointer;
 }
 
 @media (min-width: 430px) and (max-width: 827px) {
+    
+    header,
+    footer {
+        width: auto;
+        align-items: center;
+    }
+    
     .container {
         align-items: center;
         display: flex;
@@ -394,12 +402,17 @@ cursor: pointer;
         width: auto;
     }
 
+
     .products {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+         grid-gap: 25px 0px;
         height: 100vh;
         gap: 1.6rem;
+        display: flex;
+         justify-content: center;
         text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     #form-product {
@@ -408,17 +421,12 @@ cursor: pointer;
         padding-bottom: 5.0rem;
         width: auto;
         text-align: center;
+       
     }
 
     input {
         align-items: center;    
-        width: 440px; 
-    }
-
-    header,
-    footer {
-        width: auto;
-        align-items: center;
+        width: 400px; 
     }
 
     .save, .clean {
@@ -426,3 +434,4 @@ cursor: pointer;
         width: 210px;
     }
 }
+
